@@ -27,6 +27,10 @@ quicksort(['hello', 'worlds', 'hi', 'won'], len) # ['hi', 'won','hello','worlds'
 
 
 
+
+
+
+
 문제2. (이름, 나이, 성적)의 크기 3인 튜플로 이루어진 리스트 정렬 (6점)
 이름은 문자열이고 나이와 성적은 정수로 나타낸다.
 성적이 높은 경우가 가장 앞으로(왼쪽으로) 오도록 정렬
@@ -36,6 +40,11 @@ quicksort(['hello', 'worlds', 'hi', 'won'], len) # ['hi', 'won','hello','worlds'
 
 quicksort([('kim', 22, 90), ('lee', 22, 90), ('park', 24, 90), ('choi', 22, 97), ('jung', 23, 88)], key=lambda x: (-x[2], x[1], x[0]) )
 quicksort([('han', 24, 90), ('jeon', 24, 94), ('baek', 24, 90), ('ryu', 22, 97), ('nam', 23, 90)], key=lambda x: (-x[2], x[1], x[0]) )
+
+
+
+
+
 
 
 문제3. 문자열과 정수가 섞여 있는 리스트에서 정렬 (9점)
@@ -49,6 +58,9 @@ quicksort([-1,-2,'phone',-4,'mouse',-5,'keyboard',-6,'desk'], key=lambda x: -x i
 
 
 
+
+
+
 문제4. 문자열과 정수가 섞여 있는 리스트에서 정렬 (15점)
 문자열이 정수보다 항상 앞으로 오도록 정렬하는 테스트를 2개 이상 작성하라.
 단, 정수들끼리는 기본 순서인 작은 숫자가 앞으로 오도록 하고 문자열끼리는 기본 순서와 반대로 사전 역순으로 정렬되도록 하라.
@@ -56,6 +68,8 @@ quicksort([-1,-2,'phone',-4,'mouse',-5,'keyboard',-6,'desk'], key=lambda x: -x i
 
 quicksort([1,2,'apple',4,'mango',5,'orange',6,'banna'], key=lambda x: x if type(x)==int else -ord(x))
 quicksort([-1,-2,'phone',-4,'mouse',-5,'keyboard',-6,'desk'], key=lambda x: x if type(x)==int else -ord(x[0]))
+
+
 
 
 
